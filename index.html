@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>InterviewDesign - Adam Ross</title>
+  <link rel="icon" type="image/png" href="images/AdobeXd.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/30c21ac8e0.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+  <div class="sidebar">
+    <div class="sidebar-content">
+      <form action="#" method="post">
+        <input type="text" id="comment" name="comment" placeholder="Make a comment">
+        <div class="button-container">
+          <a href="#" class="button">Cancel</a>
+          <a href="#" class="button">Submit</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <main class="background">
+
+    <section class="carousel" aria-label="Gallery">
+      <ol class="carousel__viewport">
+
+        <!-- Slide 1 -->
+
+        <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper">
+            <!-- <a href="#carousel__slide8" class="carousel__prev">Go to last slide</a>
+            <a href="#carousel__slide2" class="carousel__next">Go to next slide</a> -->
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h1>FAQs</h1>
+                  <div class="grey-line"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="tab-content">
+                    <div id="tab1" class="tab-pane fade show active">
+                      <div class="accordion">
+                        <div class="card">
+                          <div class="card-header" id="infraOne">
+                            <a href="#collapseOne" data-toggle="collapse" data-target="#collapseOne"
+                              aria-expanded="false" aria-controls="collapseOne" class="question">
+                              <p class="mb-0">
+                                Why did the programmer quit his job?
+                              </p>
+                              <svg class="icon plus-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <line class="vertical-line" x1="8" y1="1" x2="8" y2="15" stroke="#444"
+                                  stroke-width="3" />
+                                <line class="horizontal-line" x1="1" y1="8" x2="15" y2="8" stroke="#444"
+                                  stroke-width="3" />
+                              </svg>
+                            </a>
+                          </div>
+                          <div id="collapseOne" class="collapse" aria-labelledby="infraOne" data-parent="#accordion">
+                            <div class="card-body">
+                              He didn't get arrays.
+                            </div>
+                          </div>
+                        </div><!-- close card-->
+                        <div class="line-break"></div>
+                        <div class="card">
+                          <div class="card-header" id="infraTwo">
+                            <a href="#collapseTwo" class="question" data-toggle="collapse" data-target="#collapseTwo"
+                              aria-expanded="false" aria-controls="collapseTwo">
+                              <p class="mb-0">How many programmers does it take to change a light bulb?</p>
+                              <svg class="icon plus-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <line class="vertical-line" x1="8" y1="1" x2="8" y2="15" stroke="#444"
+                                  stroke-width="3" />
+                                <line class="horizontal-line" x1="1" y1="8" x2="15" y2="8" stroke="#444"
+                                  stroke-width="3" />
+                              </svg>
+                            </a>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="infraTwo" data-parent="#accordion">
+                            <div class="card-body">
+                              None, that's a hardware problem
+                            </div>
+                          </div>
+                        </div><!-- card -->
+                        <div class="line-break"></div>
+                        <div class="card">
+                          <div class="card-header" id="infraThree">
+                            <a href="#collapseThree" class="question" data-toggle="collapse"
+                              data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              <p class="mb-0">0 is false and 1 is true, right?</p>
+                              <svg class="icon plus-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <line class="vertical-line" x1="8" y1="1" x2="8" y2="15" stroke="#444"
+                                  stroke-width="3" />
+                                <line class="horizontal-line" x1="1" y1="8" x2="15" y2="8" stroke="#444"
+                                  stroke-width="3" />
+                              </svg>
+                            </a>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="infraThree"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                              1
+                            </div>
+                          </div>
+                        </div><!-- card-->
+                      </div><!-- accordion-->
+                    </div><!-- tab 1-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Slide 2 -->
+
+        <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <!-- <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide3" class="carousel__next">Go to next slide</a> -->
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h1>FAQs</h1>
+                <div class="grey-line"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="tab-content">
+                  <div id="tab4" class="tab-pane fade show active">
+                    <div class="accordion">
+                      <div class="card">
+                        <div class="card-header" id="infraFour">
+                          <a href="#collapseFour" data-toggle="collapse" data-target="#collapseFour"
+                            aria-expanded="true" aria-controls="collapseFour" class="question">
+                            <p class="mb-0">
+                              Why did the programmer quit his job?
+                            </p>
+                            <svg class="icon plus-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <line class="vertical-line" x1="8" y1="1" x2="8" y2="15" stroke="#444" stroke-width="3" />
+                              <line class="horizontal-line" x1="1" y1="8" x2="15" y2="8" stroke="#444"
+                                stroke-width="3" />
+                            </svg>
+                          </a>
+                        </div>
+                        <div id="collapseFour" class="collapse show" aria-labelledby="infraFour"
+                          data-parent="#accordion">
+                          <div class="card-body">
+                            He didn't get arrays.
+                          </div>
+                        </div>
+                      </div><!-- close card-->
+                      <div class="line-break"></div>
+                      <div class="card">
+                        <div class="card-header" id="infraFive">
+                          <a href="#collapseFive" class="question" data-toggle="collapse" data-target="#collapseFive"
+                            aria-expanded="false" aria-controls="collapseFive">
+                            <p class="mb-0">
+                              How many programmers does it take to change a light bulb?
+                            </p>
+                            <svg class="icon plus-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <line class="vertical-line" x1="8" y1="1" x2="8" y2="15" stroke="#444" stroke-width="3" />
+                              <line class="horizontal-line" x1="1" y1="8" x2="15" y2="8" stroke="#444"
+                                stroke-width="3" />
+                            </svg>
+                          </a>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="infraFive" data-parent="#accordion">
+                          <div class="card-body">
+                            None, that's a hardware problem
+                          </div>
+                        </div>
+                      </div><!-- card -->
+
+                      <div class="line-break"></div>
+                      <div class="card">
+                        <div class="card-header" id="infraSix">
+                          <a href="#collapseSix" class="question" data-toggle="collapse" data-target="#collapseSix"
+                            aria-expanded="false" aria-controls="collapseSix">
+                            <p class="mb-0">
+                              0 is false and 1 is true, right?
+                            </p>
+                            <svg class="icon plus-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <line class="vertical-line" x1="8" y1="1" x2="8" y2="15" stroke="#444" stroke-width="3" />
+                              <line class="horizontal-line" x1="1" y1="8" x2="15" y2="8" stroke="#444"
+                                stroke-width="3" />
+                            </svg>
+                          </a>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="infraSix" data-parent="#accordion">
+                          <div class="card-body">
+                            1
+                          </div>
+                        </div>
+                      </div><!-- card -->
+                    </div><!-- accordion-->
+                  </div><!-- tab 1-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Slide 3 -->
+
+        <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <!-- <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide4" class="carousel__next">Go to next slide</a> -->
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h1>FAQs</h1>
+                <div class="grey-line"></div>
+              </div>
+            </div>
+            <div class="line-break"></div>
+            <div class="card">
+              <div class="card-header" id="infraSeven">
+                <a href="#collapseSeven" class="question" data-toggle="collapse" data-target="#collapseSeven"
+                  aria-expanded="false" aria-controls="collapseSeven">
+                  <p class="mb-0">
+                    How many programmers does it take to change a light bulb?
+                  </p>
+                  <svg class="icon plus-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line class="vertical-line" x1="8" y1="1" x2="8" y2="15" stroke="#444" stroke-width="3" />
+                    <line class="horizontal-line" x1="1" y1="8" x2="15" y2="8" stroke="#444" stroke-width="3" />
+                  </svg>
+                </a>
+              </div>
+              <div id="collapseSeven" class="collapse show" aria-labelledby="infraSeven" data-parent="#accordion">
+                <div class="card-body">
+                  None, that's a hardware problem
+                </div>
+              </div>
+            </div><!-- card -->
+
+            <div class="line-break"></div>
+            <div class="card">
+              <div class="card-header" id="infraEight">
+                <a href="#collapseEight" class="question" data-toggle="collapse" data-target="#collapseEight"
+                  aria-expanded="false" aria-controls="collapseEight">
+                  <p class="mb-0">
+                    0 is false and 1 is true, right?
+                  </p>
+                  <svg class="icon plus-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line class="vertical-line" x1="8" y1="1" x2="8" y2="15" stroke="#444" stroke-width="3" />
+                    <line class="horizontal-line" x1="1" y1="8" x2="15" y2="8" stroke="#444" stroke-width="3" />
+                  </svg>
+                </a>
+              </div>
+              <div id="collapseEight" class="collapse" aria-labelledby="infraEight" data-parent="#accordion">
+                <div class="card-body">
+                  1
+                </div>
+              </div>
+            </div><!-- card -->
+
+            <div class="line-break"></div>
+            <div class="card">
+              <div class="card-header" id="infraNine">
+                <a href="#collapseNine" class="question" data-toggle="collapse" data-target="#collapseNine"
+                  aria-expanded="false" aria-controls="collapseNine">
+                  <p class="mb-0">
+                    Why did the programmer quit his job?
+                  </p>
+                  <svg class="icon plus-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line class="vertical-line" x1="8" y1="1" x2="8" y2="15" stroke="#444" stroke-width="3" />
+                    <line class="horizontal-line" x1="1" y1="8" x2="15" y2="8" stroke="#444" stroke-width="3" />
+                  </svg>
+                </a>
+              </div>
+              <div id="collapseNine" class="collapse show" aria-labelledby="infraNine" data-parent="#accordion">
+                <div class="card-body">
+                  He didn't get arrays.
+                </div>
+              </div>
+            </div><!-- card -->
+          </div><!-- accordion-->
+        </li>
+
+        <!-- Slide 4 -->
+
+        <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <!-- <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide5" class="carousel__next">Go to next slide</a> -->
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h1>FAQs</h1>
+                <div class="grey-line"></div>
+              </div>
+            </div>
+            <div class="line-break"></div>
+            <div class="card">
+              <div class="card-header" id="infraTen">
+                <a href="#collapseTen" class="question" data-toggle="collapse" data-target="#collapseTen"
+                  aria-expanded="false" aria-controls="collapseTen">
+                  <p class="mb-0">
+                    Why did the programmer quit his job?
+                  </p>
+                  <svg class="icon plus-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line class="vertical-line" x1="8" y1="1" x2="8" y2="15" stroke="#444" stroke-width="3" />
+                    <line class="horizontal-line" x1="1" y1="8" x2="15" y2="8" stroke="#444" stroke-width="3" />
+                  </svg>
+                </a>
+              </div>
+              <div id="collapseTen" class="collapse" aria-labelledby="infraTen" data-parent="#accordion">
+                <div class="card-body">
+                  He didn't get arrays.
+                </div>
+              </div>
+            </div><!-- card -->
+
+            <div class="line-break"></div>
+            <div class="card">
+              <div class="card-header" id="infraEleven">
+                <a href="#collapseEleven" class="question" data-toggle="collapse" data-target="#collapseEleven"
+                  aria-expanded="true" aria-controls="collapseEleven">
+                  <p class="mb-0">How many programmers does it take to change a light bulb?</p>
+                  <svg class="icon plus-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line class="vertical-line" x1="8" y1="1" x2="8" y2="15" stroke="#444" stroke-width="3" />
+                    <line class="horizontal-line" x1="1" y1="8" x2="15" y2="8" stroke="#444" stroke-width="3" />
+                  </svg>
+                </a>
+              </div>
+              <div id="collapseEleven" class="collapse show" aria-labelledby="infraEleven" data-parent="#accordion">
+                <div class="card-body">
+                  None, that's a hardware problem
+                </div>
+              </div>
+            </div><!-- card -->
+
+            <div class="line-break"></div>
+            <div class="card">
+              <div class="card-header" id="infraTwelve">
+                <a href="#collapseTwelve" class="question" data-toggle="collapse" data-target="#collapseTwelve"
+                  aria-expanded="false" aria-controls="collapseTwelve">
+                  <p class="mb-0">0 is false and 1 is true, right?</p>
+                  <svg class="icon plus-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line class="vertical-line" x1="8" y1="1" x2="8" y2="15" stroke="#444" stroke-width="3" />
+                    <line class="horizontal-line" x1="1" y1="8" x2="15" y2="8" stroke="#444" stroke-width="3" />
+                  </svg>
+                </a>
+              </div>
+              <div id="collapseTwelve" class="collapse" aria-labelledby="infraTwelve" data-parent="#accordion">
+                <div class="card-body">
+                  1
+                </div>
+              </div>
+            </div><!-- card -->
+
+          </div><!-- accordion-->
+
+        </li>
+
+        <!-- Slide 5 -->
+
+        <li id="carousel__slide5" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <!-- <a href="#carousel__slide4" class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide6" class="carousel__next">Go to next slide</a> -->
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h1>FAQs</h1>
+                <div class="grey-line"></div>
+              </div>
+            </div>
+            <div class="line-break"></div>
+            <div class="card">
+              <div class="card-header" id="infraThirteen">
+                <a href="#collapseThirteen" class="question" data-toggle="collapse" data-target="#collapseThirteen"
+                  aria-expanded="true" aria-controls="collapseThirteen">
+                  <p class="mb-0">
+                    Why did the programmer quit his job?
+                  </p>
+                  <svg class="icon plus-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line class="vertical-line" x1="8" y1="1" x2="8" y2="15" stroke="#444" stroke-width="3" />
+                    <line class="horizontal-line" x1="1" y1="8" x2="15" y2="8" stroke="#444" stroke-width="3" />
+                  </svg>
+                </a>
+              </div>
+              <div id="collapseThirteen" class="collapse show" aria-labelledby="infraThirteen" data-parent="#accordion">
+                <div class="card-body">
+                  He didn't get arrays.
+                </div>
+              </div>
+            </div><!-- card -->
+
+            <div class="line-break"></div>
+            <div class="card">
+              <div class="card-header" id="infraFourteen">
+                <a href="#collapseFourteen" class="question" data-toggle="collapse" data-target="#collapseFourteen"
+                  aria-expanded="true" aria-controls="collapseFourteen">
+                  <p class="mb-0">How many programmers does it take to change a light bulb?</p>
+                  <svg class="icon plus-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line class="vertical-line" x1="8" y1="1" x2="8" y2="15" stroke="#444" stroke-width="3" />
+                    <line class="horizontal-line" x1="1" y1="8" x2="15" y2="8" stroke="#444" stroke-width="3" />
+                  </svg>
+                </a>
+              </div>
+              <div id="collapseFourteen" class="collapse show" aria-labelledby="infraFourteen" data-parent="#accordion">
+                <div class="card-body">
+                  None, that's a hardware problem
+                </div>
+              </div>
+            </div><!-- card -->
+
+            <div class="line-break"></div>
+            <div class="card">
+              <div class="card-header" id="infraFifteen">
+                <a href="#collapseFifteen" class="question" data-toggle="collapse" data-target="#collapseFifteen"
+                  aria-expanded="false" aria-controls="collapseFifteen">
+                  <p class="mb-0">0 is false and 1 is true, right?</p>
+                  <svg class="icon plus-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line class="vertical-line" x1="8" y1="1" x2="8" y2="15" stroke="#444" stroke-width="3" />
+                    <line class="horizontal-line" x1="1" y1="8" x2="15" y2="8" stroke="#444" stroke-width="3" />
+                  </svg>
+                </a>
+              </div>
+              <div id="collapseFifteen" class="collapse" aria-labelledby="infraFifteen" data-parent="#accordion">
+                <div class="card-body">
+                  1
+                </div>
+              </div>
+            </div><!-- card -->
+
+          </div><!-- accordion-->
+
+        </li>
+
+        <!-- Slide 6 -->
+
+        <li id="carousel__slide6" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <!-- <a href="#carousel__slide5" class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide7" class="carousel__next">Go to next slide</a> -->
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h1>FAQs</h1>
+                <div class="grey-line"></div>
+              </div>
+            </div>
+            <div class="line-break"></div>
+            <div class="card">
+              <div class="card-header" id="infraSixteen">
+                <a href="#collapseSixteen" class="question" data-toggle="collapse" data-target="#collapseSixteen"
+                  aria-expanded="false" aria-controls="collapseSixteen">
+                  <p class="mb-0">
+                    Why did the programmer quit his job?
+                  </p>
+                  <svg class="icon plus-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line class="vertical-line" x1="8" y1="1" x2="8" y2="15" stroke="#444" stroke-width="3" />
+                    <line class="horizontal-line" x1="1" y1="8" x2="15" y2="8" stroke="#444" stroke-width="3" />
+                  </svg>
+                </a>
+              </div>
+              <div id="collapseSixteen" class="collapse" aria-labelledby="infraSixteen" data-parent="#accordion">
+                <div class="card-body">
+                  He didn't get arrays.
+                </div>
+              </div>
+            </div><!-- card -->
+
+            <div class="line-break"></div>
+            <div class="card">
+              <div class="card-header" id="infraSeventeen">
+                <a href="#collapseSeventeen" class="question" data-toggle="collapse" data-target="#collapseSeventeen"
+                  aria-expanded="false" aria-controls="collapseSeventeen">
+                  <p class="mb-0">How many programmers does it take to change a light bulb?</p>
+                  <svg class="icon plus-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line class="vertical-line" x1="8" y1="1" x2="8" y2="15" stroke="#444" stroke-width="3" />
+                    <line class="horizontal-line" x1="1" y1="8" x2="15" y2="8" stroke="#444" stroke-width="3" />
+                  </svg>
+                </a>
+              </div>
+              <div id="collapseSeventeen" class="collapse" aria-labelledby="infraSeventeen" data-parent="#accordion">
+                <div class="card-body">
+                  None, that's a hardware problem
+                </div>
+              </div>
+            </div><!-- card -->
+
+            <div class="line-break"></div>
+            <div class="card">
+              <div class="card-header" id="infraEighteen">
+                <a href="#collapseEighteen" class="question" data-toggle="collapse" data-target="#collapseEighteen"
+                  aria-expanded="true" aria-controls="collapseEighteen">
+                  <p class="mb-0">0 is false and 1 is true, right?</p>
+                  <svg class="icon plus-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line class="vertical-line" x1="8" y1="1" x2="8" y2="15" stroke="#444" stroke-width="3" />
+                    <line class="horizontal-line" x1="1" y1="8" x2="15" y2="8" stroke="#444" stroke-width="3" />
+                  </svg>
+                </a>
+              </div>
+              <div id="collapseEighteen" class="collapse show" aria-labelledby="infraEighteen" data-parent="#accordion">
+                <div class="card-body">
+                  1
+                </div>
+              </div>
+            </div><!-- card -->
+
+          </div><!-- accordion-->
+
+        </li>
+
+        <!-- Slide 7 -->
+
+        <li id="carousel__slide7" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <!-- <a href="#carousel__slide6" class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide8" class="carousel__next">Go to next slide</a> -->
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h1>FAQs</h1>
+                <div class="grey-line"></div>
+              </div>
+            </div>
+            <div class="line-break"></div>
+            <div class="card">
+              <div class="card-header" id="infraNineteen">
+                <a href="#collapseNineteen" class="question" data-toggle="collapse" data-target="#collapseNineteen"
+                  aria-expanded="false" aria-controls="collapseNineteen">
+                  <p class="mb-0">
+                    Why did the programmer quit his job?
+                  </p>
+                  <svg class="icon plus-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line class="vertical-line" x1="8" y1="1" x2="8" y2="15" stroke="#444" stroke-width="3" />
+                    <line class="horizontal-line" x1="1" y1="8" x2="15" y2="8" stroke="#444" stroke-width="3" />
+                  </svg>
+                </a>
+              </div>
+              <div id="collapseNineteen" class="collapse" aria-labelledby="infraNineteen" data-parent="#accordion">
+                <div class="card-body">
+                  He didn't get arrays.
+                </div>
+              </div>
+            </div><!-- card -->
+
+            <div class="line-break"></div>
+            <div class="card">
+              <div class="card-header" id="infraTwenty">
+                <a href="#collapseTwenty" class="question" data-toggle="collapse" data-target="#collapseTwenty"
+                  aria-expanded="true" aria-controls="collapseTwenty">
+                  <p class="mb-0">How many programmers does it take to change a light bulb?</p>
+                  <svg class="icon plus-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line class="vertical-line" x1="8" y1="1" x2="8" y2="15" stroke="#444" stroke-width="3" />
+                    <line class="horizontal-line" x1="1" y1="8" x2="15" y2="8" stroke="#444" stroke-width="3" />
+                  </svg>
+                </a>
+              </div>
+              <div id="collapseTwenty" class="collapse show" aria-labelledby="infraTwenty" data-parent="#accordion">
+                <div class="card-body">
+                  None, that's a hardware problem
+                </div>
+              </div>
+            </div><!-- card -->
+
+            <div class="line-break"></div>
+            <div class="card">
+              <div class="card-header" id="infraTwentyOne">
+                <a href="#collapseTwentyOne" class="question" data-toggle="collapse" data-target="#collapseTwentyOne"
+                  aria-expanded="true" aria-controls="collapseTwentyOne">
+                  <p class="mb-0">0 is false and 1 is true, right?</p>
+                  <svg class="icon plus-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line class="vertical-line" x1="8" y1="1" x2="8" y2="15" stroke="#444" stroke-width="3" />
+                    <line class="horizontal-line" x1="1" y1="8" x2="15" y2="8" stroke="#444" stroke-width="3" />
+                  </svg>
+                </a>
+              </div>
+              <div id="collapseTwentyOne" class="collapse show" aria-labelledby="infraTwentyOne"
+                data-parent="#accordion">
+                <div class="card-body">
+                  1
+                </div>
+              </div>
+            </div><!-- card -->
+
+          </div><!-- accordion-->
+
+        </li>
+
+        <!-- Slide 8 -->
+
+        <li id="carousel__slide8" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <!-- <a href="#carousel__slide7" class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide1" class="carousel__next">Go to first slide</a> -->
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h1>FAQs</h1>
+                <div class="grey-line"></div>
+              </div>
+            </div>
+            <div class="line-break"></div>
+            <div class="card">
+              <div class="card-header" id="infraTwentyTwo">
+                <a href="#collapseTwentyTwo" class="question" data-toggle="collapse" data-target="#collapseTwentyTwo"
+                  aria-expanded="true" aria-controls="collapseTwentyTwo">
+                  <p class="mb-0">
+                    Why did the programmer quit his job?
+                  </p>
+                  <svg class="icon plus-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line class="vertical-line" x1="8" y1="1" x2="8" y2="15" stroke="#444" stroke-width="3" />
+                    <line class="horizontal-line" x1="1" y1="8" x2="15" y2="8" stroke="#444" stroke-width="3" />
+                  </svg>
+                </a>
+              </div>
+              <div id="collapseTwentyTwo" class="collapse show" aria-labelledby="infraTwentyTwo"
+                data-parent="#accordion">
+                <div class="card-body">
+                  He didn't get arrays.
+                </div>
+              </div>
+            </div><!-- card -->
+
+            <div class="line-break"></div>
+            <div class="card">
+              <div class="card-header" id="infraTwentyThree">
+                <a href="#collapseTwentyThree" class="question" data-toggle="collapse"
+                  data-target="#collapseTwentyThree" aria-expanded="true" aria-controls="collapseTwentyThree">
+                  <p class="mb-0">How many programmers does it take to change a light bulb?</p>
+                  <svg class="icon plus-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line class="vertical-line" x1="8" y1="1" x2="8" y2="15" stroke="#444" stroke-width="3" />
+                    <line class="horizontal-line" x1="1" y1="8" x2="15" y2="8" stroke="#444" stroke-width="3" />
+                  </svg>
+                </a>
+              </div>
+              <div id="collapseTwentyThree" class="collapse show" aria-labelledby="infraTwentyThree"
+                data-parent="#accordion">
+                <div class="card-body">
+                  None, that's a hardware problem
+                </div>
+              </div>
+            </div><!-- card -->
+
+            <div class="line-break"></div>
+            <div class="card">
+              <div class="card-header" id="infraTwentyFour">
+                <a href="#collapseTwentyFour" class="question" data-toggle="collapse" data-target="#collapseTwentyFour"
+                  aria-expanded="true" aria-controls="collapseTwentyFour">
+                  <p class="mb-0">0 is false and 1 is true, right?</p>
+                  <svg class="icon plus-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line class="vertical-line" x1="8" y1="1" x2="8" y2="15" stroke="#444" stroke-width="3" />
+                    <line class="horizontal-line" x1="1" y1="8" x2="15" y2="8" stroke="#444" stroke-width="3" />
+                  </svg>
+                </a>
+              </div>
+              <div id="collapseTwentyFour" class="collapse show" aria-labelledby="infraTwentyFour"
+                data-parent="#accordion">
+                <div class="card-body">
+                  1
+                </div>
+              </div>
+            </div><!-- card -->
+          </div><!-- accordion-->
+        </li>
+      </ol>
+
+      <aside class="carousel__navigation">
+        <ol class="carousel__navigation-list">
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide1" class="carousel__navigation-button">1</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide2" class="carousel__navigation-button">2</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide3" class="carousel__navigation-button">3</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide4" class="carousel__navigation-button">4</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide5" class="carousel__navigation-button">5</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide6" class="carousel__navigation-button">6</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide7" class="carousel__navigation-button">7</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide8" class="carousel__navigation-button">8</a>
+          </li>
+        </ol>
+      </aside>
+    </section>
+  </main>
+</body>
+
+</html>
