@@ -55,8 +55,9 @@
                       <div class="accordion">
                         <div class="card">
                           <div class="card-header" id="infraOne">
-                            <a href="#collapseOne" data-toggle="collapse" data-target="#collapseOne"
-                              aria-expanded="false" aria-controls="collapseOne" class="question">
+                            <a href="#collapseOne" onclick="navigateToSlide(2)" data-toggle="collapse"
+                              data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
+                              class="question">
                               <p class="mb-0">
                                 Why did the programmer quit his job?
                               </p>
@@ -736,21 +737,32 @@
     <p class="description">Other customers have frequently asked:</p><br>
 
     <div class="second-line">
-        
-        <div class="animated-text-container">
-            <div class="mask">
-                <p class="animated-text">
-                    Why did the programmer quit his job?<br />
-                    He didn't get arrays.<br />
-                    How many programmers does it take to change a light bulb?<br />
-                    None, that's a hardware problem.<br />
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
 
-<div class="space"></div>
+      <div class="animated-text-container">
+        <div class="mask">
+          <p class="animated-text">
+            Why did the programmer quit his job?<br />
+            He didn't get arrays.<br />
+            How many programmers does it take to change a light bulb?<br />
+            None, that's a hardware problem.<br />
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="space"></div>
+
+  <script>
+    function navigateToSlide(slideNumber) {
+      // Create a synthetic click event
+      var clickEvent = new Event('click', { bubbles: true });
+
+      // Find the corresponding navigation button and trigger a click
+      var navigationButton = document.querySelector('.carousel__navigation-button[href="#carousel__slide' + slideNumber + '"]');
+      navigationButton.dispatchEvent(clickEvent);
+    }
+  </script>
 </body>
 
 </html>

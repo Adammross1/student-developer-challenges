@@ -230,7 +230,7 @@ ol, li {
 .carousel__navigation {
   position: absolute;
   right: 0;
-  bottom: -10%;
+  bottom: -12%;
   left: 0;
   text-align: center;
 }
@@ -455,4 +455,17 @@ p.animated-text {
   100% {
     width: 785px;
   } /*loop-pose*/
+}
+
+/* Media Queries */
+@media (min-width: 1920px) {
+  .carousel__viewport {
+    height: 110%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .carousel__navigation {
+    bottom: -4%;
+  }
 }
